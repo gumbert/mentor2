@@ -953,10 +953,10 @@ void lim324t (const range& r, char *text, char answ[][BUFSZ], char *src)
 		a=rndr(r);
 		b=rndr(r);
 	}while(!(a!=0 && b!=0 && b!=1 && a!=1));
-	chprintf(text, "lim(x->0,(arctg(%s)^3)/sin(%s))=%d/root(3,%d)", //!
+	chprintf(text, "lim(x->0,(arctg(%s)^3)/sin(%s))=((%d)^3)/(%d)", //!
 		polynomial(buf[0], 1,b,"x"),
 		polynomial(buf[1], 1,a,"x^3"),
-		a,b
+		b,a
 	);
 	sprintf(src, "lim(x->0,(arctg(b*x)^3)/sin(a*x^3))=a/root(3,b)");
 }
@@ -1633,11 +1633,11 @@ void lim461t (const range& r, char *text, char answ[][BUFSZ], char *src)
 	}while (!(a1!=0 && a2!=0 && a1*a2!=0 && p!=0));
 	sprintf(text, "lim(x->+inf, !((%s)/(%s))^(%s))=e^(%s)",
 		polynomial(buf[0], 3, a1,"x^2",b1,"x",c1,""),
-		polynomial(buf[1], 3, a2,"x^2",b2,"x",c2,""),
+		polynomial(buf[1], 3, a1,"x^2",b2,"x",c2,""),
 		polynomial(buf[2], 1, p,"x"),
 		fraction(buf[3],(b1-b2)*p,1,a1)
 	);
-	sprintf(src, "lim(x->+inf,!((a1*x^2+b1*x+c1)/(a2*x^2+b2*x+c2))^(p*x))=(b1-b2)^p/a1");
+	sprintf(src, "lim(x->+inf,!((a1*x^2+b1*x+c1)/(a1*x^2+b2*x+c2))^(p*x))=(b1-b2)^p/a1");
 
 }
 
