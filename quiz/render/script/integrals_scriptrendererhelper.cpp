@@ -129,6 +129,21 @@ QuestionScript Integrals_ScriptRendererHelper::get (GeneratedQuestion *q)
         case 95: integ216a (r, task, answers, src); break;
         case 96: integ217a (r, task, answers, src); break;
         case 97: integ218a (r, task, answers, src); break;
+		case 110:integ301a (r, task, answers, src); break;
+		case 111:integ302a (r, task, answers, src); break;
+		case 112:integ303a (r, task, answers, src); break;
+		case 113:integ304a (r, task, answers, src); break;//
+		case 114:integ305a (r, task, answers, src); break;
+		case 115:integ306a (r, task, answers, src); break;
+		case 116:integ307a (r, task, answers, src); break;
+		case 117:integ308a (r, task, answers, src); break;
+		case 118:integ309a (r, task, answers, src); break;
+		case 119:integ310a (r, task, answers, src); break;
+		//case 120:integ311a (r, task, answers, src); break;
+		//case 121:integ316a (r, task, answers, src); break;
+		case 122:integ313a (r, task, answers, src); break;
+		case 123:integ314a (r, task, answers, src); break;
+		case 124:integ315a (r, task, answers, src); break;
         default: qDebug() << qq->integralIndex();
     }
 

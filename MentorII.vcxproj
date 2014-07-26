@@ -214,6 +214,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="quiz\render\web\convert_to_tex.cpp" />
     <ClCompile Include="Release\moc_dlgabout.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -403,6 +404,7 @@
     <ClInclude Include="GeneratedFiles\ui_taskmtrtable_taskview.h" />
     <ClInclude Include="GeneratedFiles\ui_taskquestion_taskcell.h" />
     <ClInclude Include="GeneratedFiles\ui_taskquestion_taskview.h" />
+    <ClInclude Include="quiz\render\web\convert_to_tex.h" />
     <ClInclude Include="utils\chain.h" />
     <ClInclude Include="quiz\gen\derivs_generatedquestion.h" />
     <ClInclude Include="quiz\gen\derivs_generatorhelper.h" />

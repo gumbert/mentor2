@@ -1,1 +1,1 @@
-59,lim(x->+inf,!((a1*x^2+b1*x+c1)/(a1*x^2+b2*x+c2))^(p*x))=e^(((b1-b2)*p)/a1)
+122&String(".  ")&Int((ax+b)*cos(px+q))*(Diff(x))

@@ -6,6 +6,7 @@
 #include "../utils/txttobmp.h"
 #include "../../quizgroup.h"
 #include <QDebug>
+#include "../web/convert_to_tex.h"
 
 WebRenderer *WebRenderer::instance()
 {
@@ -57,6 +58,9 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
         QTextStream right(&file);
         right.setCodec("windows-1251");
 
+		 
+
+
         for(int i=0; i<variants.count(); ++i)
         {
             QList<PrintScript> list = PrintScriptRenderer::instance()->getVariant(variants.at(i));
@@ -65,10 +69,23 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
                 QStringList script;
                 script << list[j].task << list[j].answers;
 
+
+
+				
                 TxtToBmp::instance()->convert(script).save(
                             varpath + "/Image_" + QString::number(i+1) + "_zad_" + QString::number(j+1) + ".jpg",
                             "JPG"
                 );
+				/*QFile tmp(varpath + "/texcode_" + QString::number(i+1) + "_zad_" + QString::number(j+1) + ".txt");
+				tmp.open(QIODevice::WriteOnly);
+				QTextStream tmps(&tmp);
+				tmps.setCodec("cp1251");
+				for(int i=0; i<script.count(); ++i)
+				{
+					 script[i] =cnvt_tex(script[i]);
+					 tmps << script[i] << "\n";
+				}
+				tmp.close(); */
 
                 right << QString::number(list[j].right + 1 ) << "\n";
                 if (callback)

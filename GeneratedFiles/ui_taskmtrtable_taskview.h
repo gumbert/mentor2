@@ -50,14 +50,16 @@ public:
         TaskMTRTableView->setMinimumSize(QSize(350, 0));
         verticalLayout = new QVBoxLayout(TaskMTRTableView);
         verticalLayout->setSpacing(1);
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
         tableWidget = new QTableWidget(TaskMTRTableView);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
         tableWidget->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
         tableWidget->setHorizontalScrollMode(QAbstractItemView::ScrollPerPixel);
         tableWidget->setShowGrid(true);
         tableWidget->setGridStyle(Qt::NoPen);
+        tableWidget->horizontalHeader()->setCascadingSectionResizes(false);
+        tableWidget->horizontalHeader()->setHighlightSections(true);
         tableWidget->verticalHeader()->setVisible(false);
 
         verticalLayout->addWidget(tableWidget);

@@ -792,6 +792,7 @@
         <file>apps/49/121.png</file>
         <file>apps/49/122.png</file>
         <file>apps/49/123.png</file>
+		<file>apps/49/124.png</file>
     </qresource>
     <qresource prefix="/base">
         <file>base.xml</file>

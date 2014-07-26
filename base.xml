@@ -1525,6 +1525,58 @@
 				<id>integ97</id>
 				<img src="49/97.png"/>
 			</question>
+			<question>
+				<id>integ110</id>
+				<img src="49/110.png"/>
+			</question>
+			<question>
+				<id>integ111</id>
+				<img src="49/111.png"/>
+			</question>
+			<question>
+				<id>integ112</id>
+				<img src="49/112.png"/>
+			</question>
+			<question>
+				<id>integ113</id>
+				<img src="49/113.png"/>
+			</question>
+			<question>
+				<id>integ114</id>
+				<img src="49/114.png"/>
+			</question>
+			<question>
+				<id>integ115</id>
+				<img src="49/115.png"/>
+			</question>
+			<question>
+				<id>integ116</id>
+				<img src="49/116.png"/>
+			</question>
+			<question>
+				<id>integ117</id>
+				<img src="49/117.png"/>
+			</question>
+			<question>
+				<id>integ118</id>
+				<img src="49/118.png"/>
+			</question>
+			<question>
+				<id>integ119</id>
+				<img src="49/119.png"/>
+			</question>
+			<question>
+				<id>integ122</id>
+				<img src="49/122.png"/>
+			</question>
+			<question>
+				<id>integ123</id>
+				<img src="49/123.png"/>
+			</question>
+			<question>
+				<id>integ124</id>
+				<img src="49/124.png"/>
+			</question>
 		</column>
 		<column>
 			<title>Дробно-рациональные выражения</title>

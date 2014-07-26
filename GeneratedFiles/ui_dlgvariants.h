@@ -69,7 +69,7 @@ public:
     {
         if (dlgVariants->objectName().isEmpty())
             dlgVariants->setObjectName(QStringLiteral("dlgVariants"));
-        dlgVariants->resize(610, 481);
+        dlgVariants->resize(440, 486);
         gridLayout_2 = new QGridLayout(dlgVariants);
         gridLayout_2->setSpacing(0);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
@@ -325,7 +325,7 @@ public:
         btnSelectAll->setText(QApplication::translate("dlgVariants", "\320\222\321\213\320\264\320\265\320\273\320\270\321\202\321\214 \320\262\321\201\320\265", 0));
         btnSelectNone->setText(QApplication::translate("dlgVariants", "\320\241\320\275\321\217\321\202\321\214 \320\262\321\213\320\264\320\265\320\273\320\265\320\275\320\270\320\265", 0));
         btnViewVariant->setText(QApplication::translate("dlgVariants", "\320\237\321\200\320\276\321\201\320\274\320\276\321\202\321\200", 0));
-        btnWebTests->setText(QApplication::translate("dlgVariants", "\320\242\320\265\321\201\321\202\321\213...", 0));
+        btnWebTests->setText(QApplication::translate("dlgVariants", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\202\320\265\321\201\321\202\321\213", 0));
         btnPrintSelected->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \320\262\321\213\320\264\320\265\320\273\320\265\320\275\320\275\321\213\321\205...", 0));
         chkPrintSolutions->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \321\200\320\265\321\210\320\265\320\275\320\270\320\271", 0));
     } // retranslateUi

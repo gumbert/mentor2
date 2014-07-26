@@ -492,6 +492,9 @@
     <ClCompile Include="GeneratedFiles\qrc_r.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="quiz\render\web\convert_to_tex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\chain.h">
@@ -841,6 +844,9 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_taskquestion_taskview.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quiz\render\web\convert_to_tex.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

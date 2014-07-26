@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
-    <height>481</height>
+    <width>440</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -364,7 +364,7 @@ p, li { white-space: pre-wrap; }
       <item>
        <widget class="QPushButton" name="btnWebTests">
         <property name="text">
-         <string>Тесты...</string>
+         <string>Сохранить тесты</string>
         </property>
        </widget>
       </item>

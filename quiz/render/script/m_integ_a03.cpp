@@ -132,7 +132,7 @@ void integ303a (const range &r, char *task, char answ[][BUFSZ], char *src)
         )
     );
 
-    chprintf(src, "Int((a*x+b)*sin(p*x))*diff(x)");
+    chprintf(src, "Int((a*x+b)*cos(p*x))*diff(x)");
 }
 
 void integ304a (const range &r, char *task, char answ[][BUFSZ], char *src)
@@ -185,7 +185,7 @@ void integ304a (const range &r, char *task, char answ[][BUFSZ], char *src)
         )
     );
 
-    chprintf(src, "Int((a*x+b)*sin(p*x))*diff(x)");
+    chprintf(src, "Int((a*x+b)*ln(p*x))*diff(x)");
 }
 
 void integ305a (const range &r, char *task, char answ[][BUFSZ], char *src)
@@ -339,7 +339,7 @@ void integ307a (const range &r, char *task, char answ[][BUFSZ], char *src)
         )
     );
 
-    chprintf(src, "Int((a*x^2+b)*cos(p*x))*diff(x)");
+    chprintf(src, "Int((a*x^2+b)*e^(p*x))*diff(x)");
 }
 
 void integ308a (const range &r, char *task, char answ[][BUFSZ], char *src)
@@ -391,7 +391,7 @@ void integ308a (const range &r, char *task, char answ[][BUFSZ], char *src)
         )
     );
 
-    chprintf(src, "Int((a*x^2+b)*cos(p*x))*diff(x)");
+    chprintf(src, "Int((a*x^2+b)*ln(p*x))*diff(x)");
 }
 
 void integ309a (const range &r, char *task, char answ[][BUFSZ], char *src)
@@ -487,7 +487,7 @@ void integ310a (const range &r, char *task, char answ[][BUFSZ], char *src)
     chprintf(src, "Int((a*x+b)*e^(p*x+q))*diff(x)");
 }
 
-void integ313a (const range &r, char *task, char answ[][BUFSZ], char *src)
+void integ313a (const range &r, char *task, char answ[][BUFSZ], char *src)	//122
 {
     char buf[10][BUFSZ];
     int a, b, p, q;
@@ -545,7 +545,7 @@ void integ313a (const range &r, char *task, char answ[][BUFSZ], char *src)
     delete pxq;
 }
 
-void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src)
+void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src)	 //123
 {
     char buf[10][BUFSZ];
     int a, b;
@@ -594,7 +594,7 @@ void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src)
     chprintf(src, "Int(e^(a*x)*sin(b*x))*diff(x)");
 }
 
-void integ315a (const range &r, char *task, char answ[][BUFSZ], char *src)
+void integ315a (const range &r, char *task, char answ[][BUFSZ], char *src)	 //124
 {
     char buf[10][BUFSZ];
     int a, b;
@@ -710,8 +710,8 @@ void integ312a (const range &r, char *task, char answ[][BUFSZ], char *src)
 
     chprintf(src, "Int((a*x+b)*sin(p*x+q))*diff(x)");
 }
-
-void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src)
+  */
+/*void integ316a (const range &r, char *task, char answ[][BUFSZ], char *src)
 {
     char buf[10][BUFSZ];
     int a, b, p, q;
@@ -739,9 +739,9 @@ void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src)
     chprintf(answ[2], "...=String(\"[not defined]\")");
     chprintf(answ[3], "...=String(\"[not defined]\")");
 
-    chprintf(src, "Int((a*x+b)*sin(p*x+q))*diff(x)");
-}
+    chprintf(src, "Int((a*x+b)*cos(p*x+q))*diff(x)");
+} */
 
 
-*/
+
 

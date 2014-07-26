@@ -1734,22 +1734,23 @@ void lim483t (const range& r, char *text, char answ[][BUFSZ], char *src)
 
 void lim491t (const range& r, char *text, char answ[][BUFSZ], char *src)
 {
-	char buf[10][BUFSZ];
-	int a,b,c,pc,pd;
-	do{
-		a=rndr(r);
-		b=rndr(r);
-		c=rndr(r);
-		pc=rndr(r);
-		pd=rndr(r);
-	}while (!(a!=0 && pc<pd && pc*pd>0));
-	sprintf(text, "lim(x->%s+0, !((%s)/(%s))&String(\"^\")&!(1/(%s)))=0",
-		fraction(buf[9], pc*pc*pc, 1, pd*pd*pd),
-		polynomial(buf[0],2, a,"x^2",b,"x"),
-		poly2ns(buf[1],2, c,1,1,1,"x", a*pc*pc*pc+b*pd*pd*pd-c*pc*pc*pc,pd*pd*pd,1,1,""),
-		poly2ns(buf[2],2, 1,1,1,1,"(x^(1/3))", -pc,pd,1,1,"")
-	);
-	sprintf(src, "lim(x->(p^3*c^3)/(p^3*d^3)+0, !((a*x^2+b*x)/(c*x+a*p^3*c^3+(b*p^3*d^3-c*p^3*c^3)/(p^3*d^3)))^(1/(x^(1/3)-(p*c)/(p*d))))=0");
+		char buf[10][BUFSZ];
+		int a,b,c,pc,pd;
+		do{
+			a=rndr(r);
+			b=rndr(r);
+			c=rndr(r);
+			pc=rndr(r);
+			pd=rndr(r);
+		}while (!(a!=0 && pc<pd && pc*pd>0));
+		sprintf(text, "lim(x->%s+0, !((%s)/(%s))&String(\"^\")&!(1/(%s)))=0",
+				fraction(buf[9], pc*pc*pc, 1, pd*pd*pd),
+				polynomial(buf[0],2, a,"x^2",b,"x"),
+				poly2ns(buf[1],2, c,1,1,1,"x", a*pc*pc*pc+b*pd*pd*pd-c*pc*pc*pc,pd*pd*pd,1,1,""),
+				poly2ns(buf[2],2, 1,1,1,1,"(x^(1/3))", -pc,pd,1,1,"")
+		);
+		sprintf(src, "lim(x->(p^3*c^3)/(p^3*d^3)+0, !((a*x^2+b*x)/(c*x+a*p^3*c^3+(b*p^3*d^3-c*p^3*c^3)/(p^3*d^3)))^(1/(x^(1/3)-(p*c)/(p*d))))=0");
+
 
 }
 
