@@ -1,13 +1,11 @@
-﻿Построение начато 7/26/2014 5:26:39 PM.
+﻿Построение начато 7/28/2014 12:17:54 AM.
      1>Проект "C:\Users\ATOM\Desktop\folder(4)\MentorII.last\mentor\MentorII.last2\MentorII\MentorII.vcxproj" в узле 2 (целевые объекты Build).
-     1>CustomBuild:
-         Uic'ing gui\dlgvariants.ui...
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebKit /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtNetwork /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtCore /Idebug /I"C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtPrintSupport /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtDeclarative /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebkitWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWidgets /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WEBKIT_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_PRINTSUPPORT_LIB /D QT_DECLARATIVE_LIB /D QT_WEBKITWIDGETS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 gui\dlgvariants.cpp
-         dlgvariants.cpp
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebKit /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtNetwork /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtCore /Idebug /I"C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtPrintSupport /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtDeclarative /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebkitWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWidgets /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WEBKIT_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_PRINTSUPPORT_LIB /D QT_DECLARATIVE_LIB /D QT_WEBKITWIDGETS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 quiz\render\web\webrenderer.cpp
+         webrenderer.cpp
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\MentorII.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\qtmaind.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5WebKitd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Networkd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Xmld.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib Qt5PrintSupportd.lib Qt5Declaratived.lib Qt5WebkitWidgetsd.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\MentorII.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_dlgabout.obj
          Win32\Debug\moc_dlgaddquestions.obj
@@ -136,4 +134,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:03.90
+Затраченное время: 00:00:05.74

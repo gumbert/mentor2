@@ -12,7 +12,7 @@ void integ308a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ309a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ310a (const range &r, char *task, char answ[][BUFSZ], char *src);
 //void integ311a (const range &r, char *task, char answ[][BUFSZ], char *src);
-//void integ312a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ312a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ313a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ314a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ315a (const range &r, char *task, char answ[][BUFSZ], char *src);

@@ -1452,8 +1452,8 @@
 			</question>
 		</column>
 		<column>
-			<title>По частям с параметрами</title>
-			<question>
+			<title>..под знак дифф-ла с параметрами</title>
+		<question>
 				<id>integ80</id>
 				<img src="49/80.png"/>
 			</question>
@@ -1473,6 +1473,9 @@
 				<id>integ84</id>
 				<img src="49/84.png"/>
 			</question>
+		</column>
+		<column>
+			<title>По частям с параметрами</title>
 			<question>
 				<id>integ85</id>
 				<img src="49/85.png"/>
@@ -1564,6 +1567,10 @@
 			<question>
 				<id>integ119</id>
 				<img src="49/119.png"/>
+			</question>
+			<question>
+				<id>integ121</id>
+				<img src="49/121.png"/>
 			</question>
 			<question>
 				<id>integ122</id>

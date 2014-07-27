@@ -68,7 +68,7 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
             {
                 QStringList script;
                 script << list[j].task << list[j].answers;
-
+				
 
 
 				

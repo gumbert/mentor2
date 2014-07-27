@@ -711,36 +711,63 @@ void integ312a (const range &r, char *task, char answ[][BUFSZ], char *src)
     chprintf(src, "Int((a*x+b)*sin(p*x+q))*diff(x)");
 }
   */
-/*void integ316a (const range &r, char *task, char answ[][BUFSZ], char *src)
+void integ312a (const range &r, char *task, char answ[][BUFSZ], char *src)
 {
-    char buf[10][BUFSZ];
+   char buf[10][BUFSZ];
     int a, b, p, q;
     do {
         a = rndr(r);
         b = rndr(r);
         p = rndr(r);
         q = rndr(r);
-    } while (!(a!=0 && p!=0 && q!=0));
+    } while (!(a!=0 && a!=1 && p!=0 && p!=1 && b!=0));
+
+    char *pxq = new char[BUFSZ];
+    polynomial(pxq, 2,p,"x",q,"");
 
     strcpy(task, "");
     catprintf(task, "String(\"Найдите интеграл:\")");
-    catprintf(task, "\nInt((%s)*cos(%s))*diff(x)",
-        polynomial(buf[0],2, a,"x",b,""),
-        polynomial(buf[1],2, p,"x",q,"")
+    catprintf(task, "\nInt((%s)*sin(%s))*diff(x)",
+        polynomial(buf[0], 2,a,"x",b,""),
+        polynomial(pxq, 2,p,"x",q,"")
     );
 
     chprintf(answ[0], "...=%s+C",
-        poly2ns(buf[0],2,
-             1,p,1,1, chprintf(buf[1],"((%s)*sin(%s))", polynomial(buf[3],2, a,"x",b,""), polynomial(buf[2],2,p,"x",q,"")),
-             a,p*p,1,1, chprintf(buf[7],"cos(%s)", polynomial(buf[4],2,p,"x",q,""))
+        poly2ns(buf[0], 3,
+            -a,p,1,1, chprintf(buf[1], "x*cos(%s)", pxq),
+            -b,p,1,1, chprintf(buf[2], "cos(%s)", pxq),
+            a,p*p,1,1, chprintf(buf[3], "sin(%s)", pxq)
         )
     );
-    chprintf(answ[1], "...=String(\"[not defined]\")");
-    chprintf(answ[2], "...=String(\"[not defined]\")");
-    chprintf(answ[3], "...=String(\"[not defined]\")");
 
-    chprintf(src, "Int((a*x+b)*cos(p*x+q))*diff(x)");
-} */
+    chprintf(answ[1], "...=%s+C",
+        poly2ns(buf[0], 3,
+             a,p,1,1, chprintf(buf[1], "x*cos(%s)", pxq),
+             b,p,1,1, chprintf(buf[2], "cos(%s)", pxq),
+            -1,p*p,1,1, chprintf(buf[3], "sin(%s)", pxq)
+        )
+    );
+
+    chprintf(answ[2], "...=%s+C",
+        poly2ns(buf[0], 3,
+            -a,p,1,1, chprintf(buf[1], "x*sin(%s)", pxq),
+            -b,p,1,1, chprintf(buf[2], "sin(%s)", pxq),
+            a,p*p,1,1, chprintf(buf[3], "cos(%s)", pxq)
+        )
+    );
+
+    chprintf(answ[3], "...=%s+C",
+        poly2ns(buf[0], 3,
+            a,1,1,1, chprintf(buf[1], "xcos(%s)", pxq),
+            b,1,1,1, chprintf(buf[2], "cos(%s)", pxq),
+            -a,p,1,1, chprintf(buf[3], "sin(%s)", pxq)
+        )
+    );
+
+    chprintf(src, "Int((a*x+b)*sin(p*x+q))*diff(x)");
+
+    delete pxq;
+} 
 
 
 

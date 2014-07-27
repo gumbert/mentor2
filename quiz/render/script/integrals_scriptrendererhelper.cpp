@@ -140,7 +140,7 @@ QuestionScript Integrals_ScriptRendererHelper::get (GeneratedQuestion *q)
 		case 118:integ309a (r, task, answers, src); break;
 		case 119:integ310a (r, task, answers, src); break;
 		//case 120:integ311a (r, task, answers, src); break;
-		//case 121:integ316a (r, task, answers, src); break;
+		case 121:integ312a (r, task, answers, src); break;
 		case 122:integ313a (r, task, answers, src); break;
 		case 123:integ314a (r, task, answers, src); break;
 		case 124:integ315a (r, task, answers, src); break;
