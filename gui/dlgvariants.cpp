@@ -17,6 +17,8 @@
 #include <QPainter>
 #include <QPrintDialog>
 #include "../gui/dlgtestgenprogress.h"
+//#include "../quiz/render/script/print/printscriptrenderer.h"
+#include "../quiz/render/web/convert_to_tex.h"
 
 dlgVariants::dlgVariants (Quiz *quiz, QWidget *parent)
     : QDialog(parent)
@@ -80,6 +82,8 @@ void dlgVariants::fillView()
 
 void dlgVariants::on_btnViewVariant_clicked()
 {
+	
+	
     QList<QTableWidgetItem *> list = ui->tblVariants->selectedItems();
     if (!list.isEmpty())
         (new dlgVariant(

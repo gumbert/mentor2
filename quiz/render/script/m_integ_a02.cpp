@@ -519,5 +519,192 @@ void integ218a (const range &r, char *task, char answ[][BUFSZ], char *src)
     chprintf(answ[2], "...=(1/%d)*arccos(tg(%d*x)/%d)+C", a,b,a);
     chprintf(answ[3], "...=(1/%d)*arcsin(tg(%s))+C", b, memb(buf[0], b,a,1,1,"x", false));
 }
+void integ219a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a, b;
+    do {
+        a = rndr(r);
+    } while (!(a>1 && abs(b)>1));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt(x^(%d)*diff(x))=...",a);
+    chprintf(src, "Int(x^(a)*diff(x))");
+
+    chprintf(answ[0], "...=(1/%d)*x^(%d)+C", a+1,a+1);
+    chprintf(answ[1], "...=(%d)*x^(%d)+C", a+1,a+1);
+    chprintf(answ[2], "...=(1/%d)*x^(%d)+C", a-1,a-1);
+    chprintf(answ[3], "...=(%d)*x^(%d)+C", a-1,a-1);
+}
+void integ220a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a, b;
+    do {
+        a = rndr(r);
+    } while (!(a>1 && abs(b)>1));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt(diff(x)/x)=...",a);
+    chprintf(src, "Int(diff(x)/x)");
+
+    chprintf(answ[0], "...=ln(abs(x))+C");
+    chprintf(answ[1], "...=ln(abs(x+1))+C");
+    chprintf(answ[2], "...=ln(x)+C");
+    chprintf(answ[3], "...=ln(abs(1/x))+C");
+}
+void integ221a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a, b;
+    do {
+        a = rndr(r);
+    } while (!(a>1 && abs(b)>1));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((%d)^(x)*diff(x))=...",a);
+    chprintf(src, "Int((%d)^(x)*diff(x))");
+
+    chprintf(answ[0], "...=((%d)^x)/ln(%d)+C", a,a);
+    chprintf(answ[1], "...=((%d)^x)/ln(%d)+C", a+1,a+1);
+    chprintf(answ[2], "...=((%d)^x)/ln(%d)+C", a-1,a-1);
+    chprintf(answ[3], "...=((%d)^x)/ln(abs(%d))+C", a-1,a-1);
+}
+void integ222a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+   
+    
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((e)^(x)*diff(x))=...");
+    chprintf(src, "Int((e)^(x)*diff(x))");
+
+    chprintf(answ[0], "...=((e)^x)+C");
+    chprintf(answ[1], "...=((e)^x)/ln(e)+C");
+    chprintf(answ[2], "...=((x)^e)/ln(e)+C");
+    chprintf(answ[3], "...=((e)^x)/ln(abs(e))+C");
+}
+void integ223a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+   
+    
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((sin(x))*diff(x))=...");
+    chprintf(src, "Int((sin(x))*diff(x))");
+
+    chprintf(answ[0], "...=-cos(x)+C");
+    chprintf(answ[1], "...=-sin(x)+C");
+    chprintf(answ[2], "...=cos(x)+C");
+    chprintf(answ[3], "...=sin(x)+C");
+}
+void integ224a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+   
+    
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((cos(x))*diff(x))=...");
+    chprintf(src, "Int((cos(x))*diff(x))");
+
+    chprintf(answ[0], "...=sin(x)+C");
+    chprintf(answ[1], "...=-sin(x)+C");
+    chprintf(answ[2], "...=cos(x)+C");
+    chprintf(answ[3], "...=-cos(x)+C");
+}
+void integ225a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((1/((sin(x))^(2)))*diff(x))=...");
+    chprintf(src, "Int((1/((sin(x))^(2)))*diff(x))");
+
+    chprintf(answ[0], "...=-ctg(x)+C");
+    chprintf(answ[1], "...=ctg(x)+C");
+    chprintf(answ[2], "...=tg(x)+C");
+    chprintf(answ[3], "...=-tg(x)+C");
+}
+void integ226a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((1/((cos(x))^(2)))*diff(x))=...");
+    chprintf(src, "Int((1/((cos(x))^(2)))*diff(x))");
+
+    chprintf(answ[0], "...=tg(x)+C");
+    chprintf(answ[1], "...=-ctg(x)+C");
+    chprintf(answ[2], "...=ctg(x)+C");
+    chprintf(answ[3], "...=-tg(x)+C");
+}
+void integ227a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a;
+    do {
+        a = rndr(r);
+    } while (!(a>0 ));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((1/sqrt((%d)^(2)-x^(2)))*diff(x))=...",a);
+    chprintf(src, "Int((1/sqrt((a)^(2)-x^(2)))*diff(x))");
+
+    chprintf(answ[0], "...=arcsin(x/(%d))+C", a);
+    chprintf(answ[1], "...=-arcsin(x^(2)/(%d))+C",a+1);
+    chprintf(answ[2], "...=arccos(x/(%d))+C",a-1);
+    chprintf(answ[3], "...=-arccos(x/(%d))+C", a-1,a-1);
+}
+void integ228a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a;
+    do {
+        a = rndr(r);
+    } while (!(a>0 ));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((1/((%d)^(2)+(x)^(2)))*diff(x))=...",a);
+    chprintf(src, "Int((1/((a)^(2)+(x)^(2)))*diff(x))");
+
+    chprintf(answ[0], "...=(1/(%d))*arctg(x/(%d))+C", a,a);
+    chprintf(answ[1], "...=-(1/(%d))*arctg(x/(%d))+C",a,a);
+    chprintf(answ[2], "...=(1/(%d))*arcctg(x/(%d))+C",a,a);
+    chprintf(answ[3], "...=-(1/(%d))*arcctg(x/(%d))+C",a,a);
+}
+void integ230a (const range &r, char *task, char answ[][BUFSZ], char *src)
+{
+    char buf[10][BUFSZ];
+    int a;
+    do {
+        a = rndr(r);
+    } while (!(a>0 ));
+
+    strcpy(task, "");
+    catprintf(task, "String(\"Найдите интеграл:\")");
+    catprintf(task, "\nInt((1/((%d)^(2)-(x)^(2)))*diff(x))=...",a);
+    chprintf(src, "Int((1/((a)^(2)-(x)^(2)))*diff(x))");
+
+    chprintf(answ[0], "...=(1/(%d))*ln((%d+x)/(%d-x))+C", 2*a,a,a);
+    chprintf(answ[1], "...=(1/(%d))*ln((%d+x)/(%d-x))+C", 2*a,2*a,2*a);
+    chprintf(answ[2], "...=(1/(%d))*ln((%d+x)/(%d-x))+C", a,a,a);
+    chprintf(answ[3], "...=(1/(%d))*ln((%d-x)/(%d+x))+C", 2*a,a,a);
+}
+
+
+
 
 

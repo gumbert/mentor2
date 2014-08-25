@@ -3,7 +3,6 @@
 #include <QStringList>
 #include <QPair>
 #include "../../../quizvariant.h"
-
 struct PrintScript
 {
 	QStringList task, answers, solution;

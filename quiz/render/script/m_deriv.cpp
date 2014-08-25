@@ -3339,6 +3339,7 @@ void derivb307 (const range &r, char task[BUFSZ], char answ[5][BUFSZ], char src[
 	strcpy(task, "");
 	catprintf(task, "String(\"Найти производную указанной функции:\")");
 	catprintf(task, "\ny=ctg(%s)", poly);
+
 	sprintf(src, "y=ctg(sqrt(a*x+b))");
 
 	sprintf(answ[0], "y`=(-1/(sin(%s)^2))*.(1/(2*%s))*.(%d)", poly, poly, a);

@@ -38,10 +38,17 @@ QImage TxtToBmp::convert (const QString &line)
 QImage TxtToBmp::convert (const QStringList &lines)
 {
     int left = 10, top = 10;
-    QString workdir = QDir::toNativeSeparators(QApplication::applicationDirPath()) + "\\..\\utility\\";//QString workdir = QApplication::applicationDirPath() + "/utility/";
+   // QString workdir = QDir::toNativeSeparators(QApplication::applicationDirPath()) + "\\utility\\";
+	QString workdir = QApplication::applicationDirPath() + "/utility/";
     qDebug() << workdir;
 
-    QFile config(workdir + "custom.cfg");
+
+	QString util=workdir + "txt2bmp.exe",
+			txt = workdir + "tmp.txt",
+			bmp = workdir + "tmp.bmp";
+	QStringList argum =	 QStringList()<<txt<< bmp;
+    
+	QFile config(workdir + "custom.cfg");
     config.open(QIODevice::WriteOnly);
     QTextStream cfg(&config);
     cfg.setCodec("cp1251");
@@ -54,7 +61,7 @@ QImage TxtToBmp::convert (const QStringList &lines)
         << (_font.underline()? "u" : "x");
     config.close();
 
-    QFile tmp(workdir + "tmp.txt");
+    QFile tmp(txt);
     tmp.open(QIODevice::WriteOnly);
     QTextStream tmps(&tmp);
     tmps.setCodec("cp1251");
@@ -64,13 +71,12 @@ QImage TxtToBmp::convert (const QStringList &lines)
 
     QProcess p;
     p.setWorkingDirectory(workdir);
-    p.start(workdir + "txt2bmp.exe", QStringList()
-                      << workdir + "tmp.txt"
-                      << workdir + "tmp.bmp"
-    );
+
+	
+    p.start(util,argum );
     p.waitForFinished();
 
-    return QImage(workdir + "tmp.bmp");
+    return QImage(bmp);
 }
 
 

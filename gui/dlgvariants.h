@@ -10,7 +10,7 @@ public:
     explicit dlgVariants(Quiz *quiz, QWidget *parent = 0);
     ~dlgVariants();
     Quiz *quiz();
-    
+    QString current_title;
 protected:
     virtual void timerEvent (QTimerEvent *);
 

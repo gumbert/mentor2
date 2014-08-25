@@ -1,13 +1,128 @@
-﻿Построение начато 7/28/2014 12:17:54 AM.
+﻿Построение начато 8/21/2014 12:46:56 PM.
      1>Проект "C:\Users\ATOM\Desktop\folder(4)\MentorII.last\mentor\MentorII.last2\MentorII\MentorII.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebKit /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtNetwork /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtCore /Idebug /I"C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtPrintSupport /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtDeclarative /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebkitWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWidgets /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WEBKIT_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_PRINTSUPPORT_LIB /D QT_DECLARATIVE_LIB /D QT_WEBKITWIDGETS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 quiz\render\web\webrenderer.cpp
-         webrenderer.cpp
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
-     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\web\webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebKit /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtNetwork /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtCore /Idebug /I"C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtPrintSupport /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtDeclarative /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebkitWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtMultimedia /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtQml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtQuick /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtTest /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtHelp /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtOpenGL /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtScript /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtSensors /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtSvg /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXmlPatterns /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtMultimediaWidgets /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WEBKIT_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_PRINTSUPPORT_LIB /D QT_DECLARATIVE_LIB /D QT_WEBKITWIDGETS_LIB /D QT_WIDGETS_LIB /D QT_MULTIMEDIA_LIB /D QT_QML_LIB /D QT_QUICK_LIB /D QT_TESTLIB_LIB /D QT_HELP_LIB /D QT_OPENGL_LIB /D QT_SCRIPT_LIB /D QT_SENSORS_LIB /D QT_SVG_LIB /D QT_XMLPATTERNS_LIB /D QT_MULTIMEDIAWIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 gui\dlgabout.cpp gui\dlgaddquestions.cpp gui\dlgnewgroup.cpp gui\dlgtestgenprogress.cpp gui\dlgvariant.cpp gui\dlgvariants.cpp gui\mainwindow.cpp quiz\quiz_dlgproperties.cpp quiz\quizgroup_dlgproperties.cpp quiz\render\script\integrals_scriptrendererhelper.cpp quiz\render\script\m_integ_a02.cpp quiz\render\script\print\printscriptrenderer.cpp quiz\view\quizview.cpp quiz\view\views\cell\quizgroup_quizcell.cpp quiz\view\views\cell\quizquestion_quizcell.cpp quiz\view\views\quizgroup_quiznodeview.cpp tasks\view\views\cell\taskgroup_taskcell.cpp tasks\view\views\cell\taskmtrtable_taskcell.cpp tasks\view\views\cell\taskquestion_taskcell.cpp tasks\view\views\taskgroup_taskview.cpp tasks\view\views\taskmtrtable_taskview.cpp tasks\view\views\taskquestion_taskview.cpp utils\txttobmp.cpp
+         dlgabout.cpp
+         dlgaddquestions.cpp
+         dlgnewgroup.cpp
+         dlgtestgenprogress.cpp
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>gui\dlgtestgenprogress.cpp(25): warning C4100: totalQuestions: неиспользованный формальный параметр
+         dlgvariant.cpp
+         dlgvariants.cpp
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
+         mainwindow.cpp
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: totalQuestions: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(7): warning C4100: processed: неиспользованный формальный параметр
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\gui\../quiz/render/web/webrenderer.h(8): warning C4100: totalQuestions: неиспользованный формальный параметр
+         quiz_dlgproperties.cpp
+         quizgroup_dlgproperties.cpp
+         integrals_scriptrendererhelper.cpp
+         m_integ_a02.cpp
+     1>quiz\render\script\m_integ_a02.cpp(14): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(41): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(101): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(142): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(185): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(228): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(259): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(283): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(320): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357): см. объявление "sprintf"
+     1>quiz\render\script\m_integ_a02.cpp(327): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(353): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(373): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(398): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(423): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(449): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(436): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(472): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(492): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(512): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(530): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(524): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(548): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(542): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(566): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(560): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(582): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(576): warning C4100: r: неиспользованный формальный параметр
+     1>quiz\render\script\m_integ_a02.cpp(578): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(598): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(592): warning C4100: r: неиспользованный формальный параметр
+     1>quiz\render\script\m_integ_a02.cpp(594): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(614): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(608): warning C4100: r: неиспользованный формальный параметр
+     1>quiz\render\script\m_integ_a02.cpp(610): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(628): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(624): warning C4100: r: неиспользованный формальный параметр
+     1>quiz\render\script\m_integ_a02.cpp(626): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(642): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(638): warning C4100: r: неиспользованный формальный параметр
+     1>quiz\render\script\m_integ_a02.cpp(640): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(660): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(654): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(678): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(672): warning C4101: buf: неиспользованная локальная переменная
+     1>quiz\render\script\m_integ_a02.cpp(696): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110): см. объявление "strcpy"
+     1>quiz\render\script\m_integ_a02.cpp(690): warning C4101: buf: неиспользованная локальная переменная
+         printscriptrenderer.cpp
+         quizview.cpp
+         quizgroup_quizcell.cpp
+     1>quiz\view\views\cell\quizgroup_quizcell.cpp(17): warning C4189: g: локальная переменная инициализирована, но не использована
+         quizquestion_quizcell.cpp
+         quizgroup_quiznodeview.cpp
+         taskgroup_taskcell.cpp
+         taskmtrtable_taskcell.cpp
+         taskquestion_taskcell.cpp
+         taskgroup_taskview.cpp
+         Создание кода...
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\script\m_integ_a02.cpp(528): warning C4700: использована неинициализированная локальная переменная "b"
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\script\m_integ_a02.cpp(546): warning C4700: использована неинициализированная локальная переменная "b"
+     1>c:\users\atom\desktop\folder(4)\mentorii.last\mentor\mentorii.last2\mentorii\quiz\render\script\m_integ_a02.cpp(564): warning C4700: использована неинициализированная локальная переменная "b"
+         Компиляция...
+         taskmtrtable_taskview.cpp
+         taskquestion_taskview.cpp
+         txttobmp.cpp
+         Создание кода...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebKit /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtNetwork /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtCore /Idebug /I"C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtPrintSupport /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtDeclarative /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWebkitWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtWidgets /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtMultimedia /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtQml /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtQuick /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtTest /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtHelp /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtOpenGL /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtScript /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtSensors /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtSvg /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtXmlPatterns /IC:\Qt\Qt5.3.1\5.3\msvc2012_opengl\include\QtMultimediaWidgets /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WEBKIT_LIB /D QT_NETWORK_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_PRINTSUPPORT_LIB /D QT_DECLARATIVE_LIB /D QT_WEBKITWIDGETS_LIB /D QT_WIDGETS_LIB /D QT_MULTIMEDIA_LIB /D QT_QML_LIB /D QT_QUICK_LIB /D QT_TESTLIB_LIB /D QT_HELP_LIB /D QT_OPENGL_LIB /D QT_SCRIPT_LIB /D QT_SENSORS_LIB /D QT_SVG_LIB /D QT_XMLPATTERNS_LIB /D QT_MULTIMEDIAWIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 GeneratedFiles\qrc_r.cpp
+         qrc_r.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\MentorII.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\qtmaind.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5WebKitd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Networkd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Xmld.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib Qt5PrintSupportd.lib Qt5Declaratived.lib Qt5WebkitWidgetsd.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\MentorII.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_dlgabout.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\MentorII.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\qtmaind.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5WebKitd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Networkd.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Xmld.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.1\5.3\msvc2012_opengl\lib\Qt5Cored.lib Qt5PrintSupportd.lib Qt5Declaratived.lib Qt5WebkitWidgetsd.lib Qt5Widgetsd.lib Qt5Multimediad.lib Qt5Qmld.lib Qt5Quickd.lib Qt5Testd.lib Qt5Helpd.lib Qt5OpenGLd.lib Qt5Scriptd.lib Qt5Sensorsd.lib Qt5Svgd.lib Qt5XmlPatternsd.lib Qt5MultimediaWidgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\MentorII.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_dlgabout.obj
          Win32\Debug\moc_dlgaddquestions.obj
          Win32\Debug\moc_dlgnewgroup.obj
          Win32\Debug\moc_dlgtestgenprogress.obj
@@ -134,4 +249,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:05.74
+Затраченное время: 00:00:53.29

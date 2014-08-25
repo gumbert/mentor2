@@ -1,3 +1,5 @@
+
+
 #include "webrenderer.h"
 #include <QFile>
 #include <QDir>
@@ -7,6 +9,9 @@
 #include "../../quizgroup.h"
 #include <QDebug>
 #include "../web/convert_to_tex.h"
+#include <QApplication>
+#include <QProcess>
+#include <QStringList>
 
 WebRenderer *WebRenderer::instance()
 {
@@ -63,6 +68,7 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
 
         for(int i=0; i<variants.count(); ++i)
         {
+
             QList<PrintScript> list = PrintScriptRenderer::instance()->getVariant(variants.at(i));
             for(int j=0; j<list.count(); ++j)
             {
@@ -99,8 +105,18 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
                 }
             }
         }
-
+		
         file.close();
+		QString webname=path.mid(path.lastIndexOf("/")+1);
+		QString workdirweb = QApplication::applicationDirPath() + "/toMoodleXML/";
+		QString	webutil=workdirweb+"toMoodleXML.exe";
+		QStringList argum;
+		argum <<"-d" << varpath << "-c" << webname;
+
+		QProcess p;
+		p.setWorkingDirectory(workdirweb);
+		p.start(webutil,argum);
+		p.waitForFinished();
     }
     if (callback) callback->done();
 }

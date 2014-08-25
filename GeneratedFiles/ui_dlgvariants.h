@@ -33,11 +33,18 @@ class Ui_dlgVariants
 {
 public:
     QGridLayout *gridLayout_2;
+    QFrame *frame_4;
+    QHBoxLayout *horizontalLayout_3;
+    QPushButton *btnWebTests;
+    QPushButton *btnPrintSelected;
+    QCheckBox *chkPrintSolutions;
+    QDialogButtonBox *btnbox;
     QFrame *frame_3;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLabel *label_2;
     QFrame *line_2;
+    QFrame *line;
     QFrame *frame_2;
     QVBoxLayout *verticalLayout_2;
     QFrame *frame_5;
@@ -57,28 +64,52 @@ public:
     QPushButton *btnSelectNone;
     QSpacerItem *horizontalSpacer;
     QPushButton *btnViewVariant;
-    QFrame *line;
-    QFrame *frame_4;
-    QHBoxLayout *horizontalLayout_3;
-    QPushButton *btnWebTests;
-    QPushButton *btnPrintSelected;
-    QCheckBox *chkPrintSolutions;
-    QDialogButtonBox *btnbox;
 
     void setupUi(QDialog *dlgVariants)
     {
         if (dlgVariants->objectName().isEmpty())
             dlgVariants->setObjectName(QStringLiteral("dlgVariants"));
-        dlgVariants->resize(440, 486);
+        dlgVariants->resize(440, 515);
         gridLayout_2 = new QGridLayout(dlgVariants);
         gridLayout_2->setSpacing(0);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         gridLayout_2->setContentsMargins(0, 0, 0, 1);
-        frame_3 = new QFrame(dlgVariants);
-        frame_3->setObjectName(QStringLiteral("frame_3"));
+        frame_4 = new QFrame(dlgVariants);
+        frame_4->setObjectName(QStringLiteral("frame_4"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(frame_4->sizePolicy().hasHeightForWidth());
+        frame_4->setSizePolicy(sizePolicy);
+        frame_4->setFrameShadow(QFrame::Raised);
+        horizontalLayout_3 = new QHBoxLayout(frame_4);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        btnWebTests = new QPushButton(frame_4);
+        btnWebTests->setObjectName(QStringLiteral("btnWebTests"));
+
+        horizontalLayout_3->addWidget(btnWebTests);
+
+        btnPrintSelected = new QPushButton(frame_4);
+        btnPrintSelected->setObjectName(QStringLiteral("btnPrintSelected"));
+
+        horizontalLayout_3->addWidget(btnPrintSelected);
+
+        chkPrintSolutions = new QCheckBox(frame_4);
+        chkPrintSolutions->setObjectName(QStringLiteral("chkPrintSolutions"));
+
+        horizontalLayout_3->addWidget(chkPrintSolutions);
+
+        btnbox = new QDialogButtonBox(frame_4);
+        btnbox->setObjectName(QStringLiteral("btnbox"));
+        btnbox->setStandardButtons(QDialogButtonBox::Ok);
+
+        horizontalLayout_3->addWidget(btnbox);
+
+
+        gridLayout_2->addWidget(frame_4, 4, 0, 1, 1);
+
+        frame_3 = new QFrame(dlgVariants);
+        frame_3->setObjectName(QStringLiteral("frame_3"));
         sizePolicy.setHeightForWidth(frame_3->sizePolicy().hasHeightForWidth());
         frame_3->setSizePolicy(sizePolicy);
         frame_3->setStyleSheet(QLatin1String("border: none;\n"
@@ -111,6 +142,13 @@ public:
         line_2->setFrameShape(QFrame::HLine);
 
         gridLayout_2->addWidget(line_2, 1, 0, 1, 1);
+
+        line = new QFrame(dlgVariants);
+        line->setObjectName(QStringLiteral("line"));
+        line->setFrameShadow(QFrame::Sunken);
+        line->setFrameShape(QFrame::HLine);
+
+        gridLayout_2->addWidget(line, 3, 0, 1, 1);
 
         frame_2 = new QFrame(dlgVariants);
         frame_2->setObjectName(QStringLiteral("frame_2"));
@@ -241,44 +279,6 @@ public:
 
         gridLayout_2->addWidget(frame_2, 2, 0, 1, 1);
 
-        line = new QFrame(dlgVariants);
-        line->setObjectName(QStringLiteral("line"));
-        line->setFrameShadow(QFrame::Sunken);
-        line->setFrameShape(QFrame::HLine);
-
-        gridLayout_2->addWidget(line, 3, 0, 1, 1);
-
-        frame_4 = new QFrame(dlgVariants);
-        frame_4->setObjectName(QStringLiteral("frame_4"));
-        sizePolicy.setHeightForWidth(frame_4->sizePolicy().hasHeightForWidth());
-        frame_4->setSizePolicy(sizePolicy);
-        frame_4->setFrameShadow(QFrame::Raised);
-        horizontalLayout_3 = new QHBoxLayout(frame_4);
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        btnWebTests = new QPushButton(frame_4);
-        btnWebTests->setObjectName(QStringLiteral("btnWebTests"));
-
-        horizontalLayout_3->addWidget(btnWebTests);
-
-        btnPrintSelected = new QPushButton(frame_4);
-        btnPrintSelected->setObjectName(QStringLiteral("btnPrintSelected"));
-
-        horizontalLayout_3->addWidget(btnPrintSelected);
-
-        chkPrintSolutions = new QCheckBox(frame_4);
-        chkPrintSolutions->setObjectName(QStringLiteral("chkPrintSolutions"));
-
-        horizontalLayout_3->addWidget(chkPrintSolutions);
-
-        btnbox = new QDialogButtonBox(frame_4);
-        btnbox->setObjectName(QStringLiteral("btnbox"));
-        btnbox->setStandardButtons(QDialogButtonBox::Ok);
-
-        horizontalLayout_3->addWidget(btnbox);
-
-
-        gridLayout_2->addWidget(frame_4, 4, 0, 1, 1);
-
 
         retranslateUi(dlgVariants);
 
@@ -288,6 +288,9 @@ public:
     void retranslateUi(QDialog *dlgVariants)
     {
         dlgVariants->setWindowTitle(QApplication::translate("dlgVariants", "\320\222\320\260\321\200\320\270\320\260\320\275\321\202\321\213", 0));
+        btnWebTests->setText(QApplication::translate("dlgVariants", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\202\320\265\321\201\321\202\321\213", 0));
+        btnPrintSelected->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \320\262\321\213\320\264\320\265\320\273\320\265\320\275\320\275\321\213\321\205...", 0));
+        chkPrintSolutions->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \321\200\320\265\321\210\320\265\320\275\320\270\320\271", 0));
         label->setText(QString());
         label_2->setText(QApplication::translate("dlgVariants", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -325,9 +328,6 @@ public:
         btnSelectAll->setText(QApplication::translate("dlgVariants", "\320\222\321\213\320\264\320\265\320\273\320\270\321\202\321\214 \320\262\321\201\320\265", 0));
         btnSelectNone->setText(QApplication::translate("dlgVariants", "\320\241\320\275\321\217\321\202\321\214 \320\262\321\213\320\264\320\265\320\273\320\265\320\275\320\270\320\265", 0));
         btnViewVariant->setText(QApplication::translate("dlgVariants", "\320\237\321\200\320\276\321\201\320\274\320\276\321\202\321\200", 0));
-        btnWebTests->setText(QApplication::translate("dlgVariants", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\202\320\265\321\201\321\202\321\213", 0));
-        btnPrintSelected->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \320\262\321\213\320\264\320\265\320\273\320\265\320\275\320\275\321\213\321\205...", 0));
-        chkPrintSolutions->setText(QApplication::translate("dlgVariants", "\320\237\320\265\321\207\320\260\321\202\321\214 \321\200\320\265\321\210\320\265\320\275\320\270\320\271", 0));
     } // retranslateUi
 
 };

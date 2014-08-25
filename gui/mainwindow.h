@@ -3,7 +3,6 @@
 #include <QMainWindow>
 #include "../tasks/view/views/taskview.h"
 #include "../quiz/view/quizview.h"
-
 namespace Ui { class MainWindow; }
 class MainWindow : public QMainWindow
 {
@@ -11,6 +10,7 @@ class MainWindow : public QMainWindow
 public:
 	explicit MainWindow(QWidget *parent = 0);
 	~MainWindow();
+
 private:
 	QuizView *quizView;
 	TaskView *taskView;

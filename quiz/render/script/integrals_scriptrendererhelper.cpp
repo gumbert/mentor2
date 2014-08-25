@@ -129,6 +129,20 @@ QuestionScript Integrals_ScriptRendererHelper::get (GeneratedQuestion *q)
         case 95: integ216a (r, task, answers, src); break;
         case 96: integ217a (r, task, answers, src); break;
         case 97: integ218a (r, task, answers, src); break;
+		//табличные интегралы 98-109
+		case 98: integ219a (r, task, answers, src); break;
+		case 99: integ220a (r, task, answers, src); break;
+		case 100: integ221a (r, task, answers, src); break;
+		case 101: integ222a (r, task, answers, src); break;
+		case 102: integ223a (r, task, answers, src); break;
+		case 103: integ224a (r, task, answers, src); break;
+		case 104: integ225a (r, task, answers, src); break;
+		case 105: integ226a (r, task, answers, src); break;
+		case 106: integ227a (r, task, answers, src); break;
+		case 107: integ228a (r, task, answers, src); break;
+		/*case 108: integ229a (r, task, answers, src); break;*/
+		case 109: integ230a (r, task, answers, src); break;
+		// новые
 		case 110:integ301a (r, task, answers, src); break;
 		case 111:integ302a (r, task, answers, src); break;
 		case 112:integ303a (r, task, answers, src); break;

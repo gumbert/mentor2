@@ -21,4 +21,17 @@ void integ216a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ217a (const range &r, char *task, char answ[][BUFSZ], char *src);
 void integ218a (const range &r, char *task, char answ[][BUFSZ], char *src);
 
+void integ219a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ220a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ221a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ222a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ223a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ224a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ225a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ226a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ227a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ228a (const range &r, char *task, char answ[][BUFSZ], char *src);
+//void integ229a (const range &r, char *task, char answ[][BUFSZ], char *src);
+void integ230a (const range &r, char *task, char answ[][BUFSZ], char *src);
+
 #endif

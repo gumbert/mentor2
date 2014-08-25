@@ -1,6 +1,7 @@
 
 #include "convert_to_tex.h"
  #include <QVector>
+QString currrent;
 struct lex_st
 {
 	QString token;
