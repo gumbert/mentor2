@@ -232,3 +232,6 @@ FORMS += \
     quiz/quiz_dlgproperties.ui \
     quiz/quizgroup_dlgproperties.ui \
     gui/dlgaddquestions.ui
+	#windows xp совместимость 
+	DEFINES += "WINVER = 0x0501"
+	DEFINES += "_WIN32_WINNT = 0x0501"

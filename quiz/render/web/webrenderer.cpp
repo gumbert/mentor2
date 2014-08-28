@@ -82,16 +82,16 @@ void WebRenderer::render (Quiz *quiz, const QString &path, WebCallback *callback
                             varpath + "/Image_" + QString::number(i+1) + "_zad_" + QString::number(j+1) + ".jpg",
                             "JPG"
                 );
-				/*QFile tmp(varpath + "/texcode_" + QString::number(i+1) + "_zad_" + QString::number(j+1) + ".txt");
+				QFile tmp(varpath + "/texcode_" + QString::number(i+1) + "_zad_" + QString::number(j+1) + ".txt");
 				tmp.open(QIODevice::WriteOnly);
 				QTextStream tmps(&tmp);
 				tmps.setCodec("cp1251");
 				for(int i=0; i<script.count(); ++i)
 				{
-					 script[i] =cnvt_tex(script[i]);
+					 //script[i] =cnvt_tex(script[i]);
 					 tmps << script[i] << "\n";
 				}
-				tmp.close(); */
+				tmp.close(); 
 
                 right << QString::number(list[j].right + 1 ) << "\n";
                 if (callback)
